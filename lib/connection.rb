@@ -8,7 +8,7 @@ class Connection
   end
 
   def self.connection
-    Faraday.new(url: 'https://fakestoreapi.com') do |faraday|
+    Faraday.new(url: 'https://dummyjson.com') do |faraday|
       faraday.adapter Faraday.default_adapter
     end
   end

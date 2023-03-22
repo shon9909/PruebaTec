@@ -55,8 +55,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#React-Ruby
-gem 'react-rails'
-
+#Bootstrap
+gem 'bootstrap'
+gem 'autoprefixer-rails'
 #Api_connection
 gem 'faraday'
