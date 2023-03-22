@@ -57,3 +57,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #React-Ruby
 gem 'react-rails'
+
+#Api_connection
+gem 'faraday'
