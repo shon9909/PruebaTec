@@ -67,14 +67,14 @@
                 <div class="accordion-body">
                   <ul class="list-unstyled">
                     <% array = Array.new %>
-                    <% @post["products"].each do |product| %>
+                    <% @products["products"].each do |product| %>
                       <% array << product["category"]  %>
                     <% end %>
                     <% array.uniq.sort.each do |category| %>
                       <li><a href="#" class="text-dark"> <%= category.capitalize %></a></li>
                     <% end %>
-                    <%# @post.each do |valor| %>
-                      <%# array << valor['category']  %> 
+                    <%# @products.each do |valor| %>
+                      <%# array << valor['category']  %>
                     <%# end %>
                     <%# array.uniq.sort.each do |category| %>
                       <!-- <li><a href="#" class="text-dark"> <%#= category.capitalize %></a></li> -->
@@ -264,7 +264,7 @@
       <!-- content -->
       <div class="col-lg-9">
         <header class="d-sm-flex align-items-center border-bottom mb-4 pb-3">
-          <strong class="d-block py-2"><%= @post["total"] %> - Items </strong>
+          <strong class="d-block py-2"><%= @products["total"] %> - Items </strong>
           <div class="ms-auto">
             <select class="form-select d-inline-block w-auto border pt-1">
               <option value="0">Best match</option>
@@ -284,7 +284,7 @@
         </header>
 
         <div class="row">
-          <% @post["products"].each do |product| %>
+          <% @products["products"].each do |product| %>
             <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
               <div class="card w-100 my-2 shadow-2-strong">
                 <img src="<%= product["images"][0] %>" width="500 px" height="300 px" class="card-img-top" />
