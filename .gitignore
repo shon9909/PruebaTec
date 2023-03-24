@@ -11,3 +11,4 @@ yarn-debug.log*
 .yarn-integrity
 /log/* .log /tmp/ !/log/.keep !/tmp/.keep
 /config/database.yml
+.idea
